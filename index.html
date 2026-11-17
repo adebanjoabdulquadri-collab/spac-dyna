@@ -1,0 +1,565 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>space-dyna-project</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/33613caafb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins bg-white overflow-x-hidden">
+    <!-- header -->
+    <header
+      id="Home"
+      class="flex sticky top-0 z-50 justify-between items-center px-4 sm:px-8 md:px-16 py-6 md:py-8 bg-white shadow-md text-black"
+    >
+      <div class="md:ml-4">
+        <h1
+          class="text-2xl md:text-3xl font-bold flex justify-start md:justify-center items-center"
+        >
+          <span class="text-blue-600">SPAC</span>
+          <span class="text-rose-600">DYNA</span>
+        </h1>
+      </div>
+      <!-- nav bars -->
+      <nav
+        id="Home"
+        class="hidden lg:flex items-center justify-between font-semibold gap-8 text-md space-x-3 leading-loose text-gray-950"
+      >
+        <a href="#Home" class="text-rose-600 font-semibold">Home</a>
+        <a href="#About Us" class="hover:text-rose-600">About Us</a>
+        <a href="#Services" class="hover:text-rose-600">Services</a>
+        <a href="#Portfolio" class="hover:text-rose-600">Portfolio</a>
+        <a href="#Blog" class="hover:text-rose-600">Blog</a>
+        <a href="#Message Us" class="hover:text-rose-600">Message Us</a>
+      </nav>
+      <!-- buttton -->
+      <div class="">
+        <button
+          class="hidden md:block px-4 py-2 rounded-full bg-gradient-to-b font-semibold hover:bg-blue-500 bg-rose-500 text-white"
+        >
+          Contact Now
+        </button>
+      </div>
+      <!-- Hamburgger visible on mobile -->
+      <div class="text-xl block lg:hidden text-gray-950 font-medium">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section
+      class="flex flex-col md:flex-row justify-center md:justify-between items-center mt-12 md:mt-24 px-4 md:px-16 gap-12"
+    >
+      <!-- text container -->
+      <div
+        id="welcome"
+        class="flex flex-col justify-center items-center md:items-start gap-4 w-full md:w-1/2"
+      >
+        <!-- background images -->
+        <div class="-z-10 absolute top-0 left-4 hidden md:block">
+          <img src="./images/baner-dec-left.png" alt=" background image left" />
+        </div>
+
+        <div class="-z-10 absolute top-10 right-1 hidden md:block">
+          <img
+            src="./images/baner-dec-right.png"
+            alt="background-image right"
+          />
+        </div>
+        <!-- paragraph -->
+        <p
+          class="text-[#fe3f40] text-lg uppercase md:text-2xl items-center font-semibold md:space-x-3 text-center md:text-left"
+        >
+          Welcome To Space Dynamic
+        </p>
+        <p
+          class="text-4xl sm:text-5xl flex flex-col md:block gap-2 justify-center md:justify-start items-center md:items-start md:text-6xl font-bold text-[#2a2a2a] leading-none md:leading-tight"
+        >
+          We Make <span class="text-blue-400">Digital</span>
+
+          <span class="text-blue-400"
+            >Ideas <span class="text-[#2a2a2a]">&</span></span
+          >
+          <span class="text-red-500">SEO </span>
+          <span>Marketing</span>
+        </p>
+        <p
+          class="text-[#2a2a2a] tracking-normal leading-loose p-4 text-center md:text-start"
+        >
+          Space Dynamic is a Professional looking Html using a Bootstrap 5 (beta
+          2). This CSS template is free for you provided by
+          <span class="text-blue-500"><a href="">codeden.io</a></span>
+        </p>
+        <!-- form -->
+        <div
+          class="bg-blue-400 py-1 md:py-2 px-2 md:px-8 w-full md:w-4/5 flex gap-2 justify-evenly md:items-center md:justify-between rounded-full mt-4"
+        >
+          <input
+            class="min-w-0 flex-1 placeholder:text-white placeholder:bg-transparent bg-transparent border-none focus:outline-none focus:ring-0 focus:border-transparent focus:text-white"
+            type="address"
+            name="address"
+            class="email"
+            placeholder="Your website URL..."
+            autocomplete="on"
+            required=""
+          />
+          <button
+            class="shrink-0 text-rose-600 text-sm md:text-base border px-2 md:px-4 cursor-pointer py-1 md:py-2 bg-white rounded-full"
+          >
+            Analyze site
+          </button>
+        </div>
+      </div>
+      <!-- image container -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="./images/banner-right-image.png"
+          alt=""
+          class="w-full h-auto"
+        />
+      </div>
+    </section>
+    <!-- about section -->
+    <section
+      id="About Us"
+      class="mt-20 md:mt-52 md:bg-[url('./images/about-bg.png')] md:bg-cover md:bg-center md:min-h-screen w-full"
+    >
+      <div
+        class="flex flex-col-reverse md:flex-row gap-12 pb-2 p-6 md:p-16 justify-between"
+      >
+        <!-- <img src="./images/about-bg.png" alt="" /> -->
+        <div class="relative -top-20 md:top-0 md:mt-32 md:w-1/2 shrink-0">
+          <img
+            src="./images/about-left-image.png"
+            alt=""
+            class="w-full h-auto"
+          />
+        </div>
+        <!-- side contents -->
+        <div
+          class="grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-y-0 md:gap-x-2 md:mb-4 md:ml-12"
+        >
+          <!-- box 1 -->
+          <div
+            class="md:flex bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] md:bg-inherit py-4 md:py-0 rounded-xl float-right md:float-none md:rounded-none p-4 md:p-0 md:bg-none md:flex-row md:justify-between md:items-center md:gap-4"
+          >
+            <img
+              src="./images/service-icon-01.png"
+              alt=""
+              width="70px"
+              class="float-left md:float-none mr-6 md:mr-0"
+            />
+            <div class="text-white leading-tight items-center">
+              <h1 class="text-2xl font-bold">Data Analysis</h1>
+              <p class="mt-2 text-lg">
+                Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter
+              </p>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div
+            class="md:flex bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] md:bg-inherit py-4 md:py-0 rounded-xl float-right md:float-none md:rounded-none p-4 md:p-0 md:bg-none md:flex-row md:justify-between md:items-center md:gap-4"
+          >
+            <img
+              src="./images/service-icon-02.png"
+              alt=""
+              width="70px"
+              class="float-left md:float-none mr-6 md:mr-0"
+            />
+            <div class="text-white leading-tight items-center">
+              <h1 class="text-2xl font-bold">Data Reporting</h1>
+              <p class="mt-2 text-lg">
+                Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter
+              </p>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div
+            class="md:flex bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] md:bg-inherit py-4 md:py-0 rounded-xl float-right md:float-none md:rounded-none p-4 md:p-0 md:bg-none md:flex-row md:justify-between md:items-center md:gap-4"
+          >
+            <img
+              src="./images/service-icon-03.png"
+              alt=""
+              width="70px"
+              class="float-left md:float-none mr-6 md:mr-0"
+            />
+            <div class="text-white leading-tight items-center">
+              <h1 class="text-2xl font-bold">Web Analytics</h1>
+              <p class="mt-2 text-lg">
+                Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter
+              </p>
+            </div>
+          </div>
+          <!-- box 4 -->
+          <div
+            class="md:flex bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] md:bg-inherit py-4 md:py-0 rounded-xl float-right md:float-none md:rounded-none p-4 md:p-0 md:bg-none md:flex-row md:justify-between md:items-center md:gap-4 z-50 md:z-0"
+          >
+            <img
+              src="./images/service-icon-04.png"
+              alt=""
+              width="70px"
+              class="float-left md:float-none mr-6 md:mr-0"
+            />
+            <div class="text-white leading-tight">
+              <h1 class="text-2xl font-bold">SEO Suggestions</h1>
+              <p class="mt-2 text-lg">
+                Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="Services">
+      <div
+        class="items-center flex flex-col lg:flex-row justify-between p-6 md:p-16 mt-12"
+      >
+        <div class="w-full lg:w-1/2">
+          <img
+            src="./images/services-left-image.png"
+            alt=""
+            class="w-full h-auto"
+          />
+        </div>
+        <div class="w-full lg:w-1/2 px-2 sm:px-10 py-12">
+          <h1
+            class="text-2xl sm:text-[30px] font-bold text-[#2a2a2a] text-center"
+          >
+            Grow your website with our <br />
+            <span class="text-blue-400">SEO </span>service &
+            <span class="text-red-600">Project</span> Ideas
+          </h1>
+          <p class="leading-relaxed py-5 text-[#2a2a2a] font-xl max-w-[500px]">
+            Space Dynamic HTML5 template is free to use for your website
+            projects. However, you are not permitted to redistribute the
+            template ZIP file on any CSS template collection websites. Please
+            contact us for more information. Thank you for your kind
+            cooperation.
+          </p>
+
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between">
+              <h4 class="font-semibold text-xl">Website Analysis</h4>
+
+              <span class="text-xl text-[#03a4ed] font-semibold">84%</span>
+            </div>
+            <div class="w-full bg-gray-300 rounded-full">
+              <div class="w-[84%] h-2 bg-[#ff4d1e] rounded-full"></div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <h4 class="font-semibold text-xl">SEO Reports</h4>
+              <span class="text-xl text-[#03a4ed] font-semibold">88%</span>
+            </div>
+            <div class="w-full bg-gray-300 rounded-full">
+              <div class="w-[88%] h-2 bg-[#ff4d1e] rounded-full"></div>
+            </div>
+            <div class="flex justify-between mt-4">
+              <h4 class="font-semibold text-xl">Page Optimizations</h4>
+              <span class="text-xl text-[#03a4ed] font-semibold">94%</span>
+            </div>
+            <div class="w-full bg-gray-300 rounded-full">
+              <div class="w-[94%] h-2 bg-[#ff4d1e] rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Portfolio">
+      <div class="">
+        <div class="text-center text-3xl leading-tight">
+          <h1 class="font-bold">See What Our Agency</h1>
+          <h1 class="font-bold">
+            <span class="text-[#03a4ed]">Offers</span> & What We
+          </h1>
+          <h1 class="font-bold"><span class="text-[#ff4d1e]">Provide</span></h1>
+        </div>
+        <div
+          class="mt-20 flex flex-col gap-1 md:gap-5 md:flex-row md:flex-wrap lg:flex-nowrap justify-center items-center px-4 md:px-12 py-4"
+        >
+          <div class="">
+            <div
+              class="text-white bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] px-10 py-10 rounded-xl shadow-md relative"
+            >
+              <h1 class="text-center text-xl font-bold">SEO Analysis</h1>
+              <p class="w-44 leading-[30px] text-center">
+                lorem ipsum dolor sit ameti ctetur aoi adipiscing eto
+              </p>
+            </div>
+            <img
+              src="./images/portfolio-image.png"
+              alt="portfolio image"
+              class="bg-white relative -top-52 z-30 px-20 py-14 rounded-xl shadow-md"
+            />
+          </div>
+          <div class="">
+            <div
+              class="text-white bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] px-10 py-10 rounded-xl shadow-md"
+            >
+              <h1 class="text-center text-xl font-bold">Website Reporting</h1>
+              <p class="w-44 leading-[30px] text-center">
+                lorem ipsum dolor sit ameti ctetur aoi adipiscing eto
+              </p>
+            </div>
+            <img
+              src="./images/portfolio-image.png"
+              alt="portfolio image"
+              class="bg-white relative -top-52 z-30 px-20 py-14 rounded-xl shadow-md"
+            />
+          </div>
+          <div class="">
+            <div
+              class="text-white bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] px-10 py-10 rounded-xl shadow-md"
+            >
+              <h1 class="text-center text-xl font-bold">Performance Tests</h1>
+              <p class="w-44 leading-[30px] text-center">
+                lorem ipsum dolor sit ameti ctetur aoi adipiscing eto
+              </p>
+            </div>
+            <img
+              src="./images/portfolio-image.png"
+              alt="portfolio image"
+              class="bg-white relative -top-52 z-30 px-20 py-14 rounded-xl shadow-md"
+            />
+          </div>
+          <div class="">
+            <div
+              class="text-white bg-gradient-to-r from-[#ff4d1e] to-[#ff2c6d] px-10 py-10 rounded-xl shadow-md"
+            >
+              <h1 class="text-center text-xl font-bold">Data Analysis</h1>
+              <p class="w-44 leading-[30px] text-center">
+                lorem ipsum dolor sit ameti ctetur aoi adipiscing eto
+              </p>
+            </div>
+            <img
+              src="./images/portfolio-image.png"
+              alt="portfolio image"
+              class="bg-white relative -top-52 z-30 px-20 py-14 rounded-xl shadow-md"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="mt-32" id="Blog">
+      <!-- main-div -->
+      <div class="flex flex-col items-center xl:items-start xl:flex-row gap-16">
+        <!-- first-content -->
+        <!-- first-content-main-div -->
+        <div
+          class="flex flex-row items-center justify-between xl:mt-16 mt-4 w-full xl:w-auto"
+        >
+          <div
+            class="mt-4 xl:mt-16 font-bold text-3xl px-4 sm:px-8 xl:pl-32 xl:pr-0 leading-tight w-full"
+          >
+            <h1>Check Out What Is</h1>
+            <h1><span class="text-[#03a4ed]">Trending</span> In Our Latest</h1>
+            <h1 class="text-[#ff4d1e]">News</h1>
+            <div class="">
+              <img
+                src="./images/big-blog-thumb.jpg"
+                alt=""
+                class="rounded-3xl shadow-xl mt-6 px-3 py-2 md:py-0 md:px-0 w-full h-auto"
+              />
+              <div
+                class="relative -top-32 bg-white px-3 py-16 pl-8 shadow-xl rounded-2xl w-full max-w-[450px]"
+              >
+                <div
+                  class="flex flex-col md:flex-row items-start md:items-center mt-6 p-0 absolute top-3 text-xl justify-between gap-2 md:gap-12"
+                >
+                  <div class="flex justify-normal md:justify-between gap-2">
+                    <i class="fa-regular fa-calendar text-[#ff4d61]"></i>
+                    <p class="text-[#afafaf] text-sm font-semibold">
+                      24 Mar 2021
+                    </p>
+                  </div>
+                  <div class="flex justify-normal md:justify-between gap-2">
+                    <i class="fa-solid fa-people-group text-[#ff4d61]"></i>
+                    <p class="text-[#afafaf] text-sm font-semibold">
+                      codeden.io
+                    </p>
+                  </div>
+                  <div class="flex justify-normal md:justify-between gap-2">
+                    <i class="fa-solid fa-folder text-[#ff4d61]"></i>
+                    <p class="text-[#afafaf] text-sm font-semibold">Branding</p>
+                  </div>
+                </div>
+                <div class="mt-12 md:mt-4">
+                  <h6 class="text-2xl">SEO Agency & Digital Marketing</h6>
+                  <p
+                    class="text-[15px] mt-4 font-semibold text-[#2a2a2a] leading-relaxed px-3 pl-1"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur and sed doer ket
+                    eismod tempor incididunt ut labore et dolore magna...
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="bg-[#03a4ed] rounded-full text-xl px-6 py-2 relative -top-24"
+                >
+                  <span class="text-white font-normal text-xl"
+                    >Discover More</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second-content -->
+        <!-- second-content-main-div -->
+
+        <div
+          class="xl:mt-64 grid grid-cols-1 sm:grid-cols-2 gap-x-4 px-6 sm:px-8 xl:px-0 xl:pr-56"
+        >
+          <div class="">
+            <div class="flex items-center gap-2 p-2">
+              <i class="fa-regular fa-calendar text-[#ff4d61]"></i>
+              <p class="text-[#afafaf] text-[15px]">18 Mar 2021</p>
+            </div>
+            <h1 class="text-xl font-bold text-[#2a2a2a]">
+              New Websites & <br />
+              Backlinks
+            </h1>
+            <div class="mt-4">
+              <p class="w-full max-w-[13rem]">
+                Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <img src="./images/blog-thumb-01.jpg" alt="" class="rounded-xl" />
+          </div>
+          <div class="mt-3">
+            <div class="flex items-center gap-2 p-2">
+              <i class="fa-regular fa-calendar text-[#ff4d61]"></i>
+              <p class="text-[#afafaf] text-[15px]">14 Mar 2021</p>
+            </div>
+            <h1 class="text-xl font-bold text-[#2a2a2a]">
+              SEO Analysis & <br />
+              Content Ideas
+            </h1>
+            <div class="mt-4">
+              <p class="w-full max-w-[13rem]">
+                Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...
+              </p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <img src="./images/blog-thumb-01.jpg" alt="" class="rounded-xl" />
+          </div>
+          <div class="mt-3">
+            <div class="flex items-center gap-2 p-2">
+              <i class="fa-regular fa-calendar text-[#ff4d61]"></i>
+              <p class="text-[#afafaf] text-[15px]">18 Mar 2021</p>
+            </div>
+            <h1 class="text-xl font-bold text-[#2a2a2a]">
+              SEO Tips & Digital <br />
+              Marketing
+            </h1>
+            <div class="mt-4">
+              <p class="w-full max-w-[13rem]">
+                Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...
+              </p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <img src="./images/blog-thumb-01.jpg" alt="" class="rounded-xl" />
+          </div>
+        </div>
+        <div class="hidden xl:block absolute right-48">
+          <img src="./images/blog-dec.png" alt="" class="relative -bottom-6" />
+        </div>
+      </div>
+    </section>
+    <section id="Message Us">
+      <div
+        class="md:bg-[url('./images/contact-bg.png')] md:bg-cover md:min-h-screen w-full px-4 py-12 flex flex-col lg:flex-row gap-10 justify-between items-center"
+      >
+        <div class="text-[#ffffff] flex flex-col px-2 sm:px-8 lg:pl-28 lg:pr-0">
+          <h1 class="font-extrabold text-3xl w-full lg:w-10/12 leading-tight">
+            Feel Free To Send Us a Message About Your Website Needs
+          </h1>
+          <p class="mt-9 text-lg leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer
+            ket <br class="hidden lg:block" />eismod tempor incididunt ut labore
+            et dolores
+          </p>
+          <div
+            class="flex flex-row flex-wrap gap-6 mt-6 items-center text-center"
+          >
+            <p class="text-xl font-extrabold">For any e nquiry, Call Us:</p>
+            <p class="rounded-full px-3 py-2 bg-white">
+              <i class="fa-solid fa-phone text-red-600"></i>
+            </p>
+            <p>010-020-0340</p>
+          </div>
+        </div>
+        <div class="w-full lg:w-auto px-2 sm:px-8 lg:px-0 lg:pr-20">
+          <!-- form section  -->
+          <form
+            class="bg-white p-[60px_30px] rounded-xl flex flex-col gap-6 w-full"
+          >
+            <!-- name + surname -->
+            <div class="flex flex-row justify-between gap-4">
+              <input
+                type="text"
+                placeholder="Name"
+                class="min-w-0 w-full px-5 py-3 rounded-full bg-sky-200 placeholder-gray-600"
+              />
+              <input
+                type="text"
+                placeholder="Surname"
+                class="min-w-0 w-full px-5 py-3 rounded-full bg-sky-200 placeholder-gray-600"
+              />
+            </div>
+            <div class="">
+              <input
+                type="text"
+                placeholder="Your Email"
+                class="px-5 py-3 w-full rounded-full bg-sky-200 placeholder-gray-600"
+              />
+            </div>
+            <div class="">
+              <textarea
+                placeholder="Message"
+                class="pl-4 w-full py-9 rounded-xl bg-sky-200"
+              ></textarea>
+            </div>
+            <div class="">
+              <button
+                class="bg-[#03a4ed] text-white py-3 px-6 rounded-full hover:bg-[#ff4d61]"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="items-center text-center mt-12 mb-12 px-4 text-[#2a2a2a]">
+        <h1>© Copyright 2021 Space Dynamic Co. All Rights Reserved.</h1>
+        <p>
+          Design:
+          <span class="text-[#fe3f40] hover:text-blue-500 cursor-pointer"
+            >Codeden.io</span
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
